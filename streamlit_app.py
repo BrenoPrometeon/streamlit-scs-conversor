@@ -9,7 +9,7 @@ logo_path = "assets/logoWhite.png"
 image = Image.open(logo_path)
 
 # Show image in Streamlit
-st.image(image, caption='Prometeon Type Group', use_column_width=True)
+st.image(image, caption='Prometeon Type Group')
 
 # Title and Description
 st.title("SCS Converter")
@@ -42,7 +42,7 @@ if uploaded is not None:
     # Variables
     old_values_RP = ['L\'\'','P','Q','R','R\'','R\'\'','T','V','Y']
     old_values_RP_S = ['L\'\'','P','Q','R','R\'','R\'\'','T','V','Y','S']
-    old_values_P = ['F\'\'\'','O']
+    old_values_P = ["F'''", 'O', 'BC']
 
     # Options to modify the file
     options = ["Yes", "No"]
@@ -71,6 +71,10 @@ if uploaded is not None:
         ['LC', '', 0, '0,0', '0,0', 'mm', 'P', ''],
         ['BC1', '', 0, '0,0', '0,0', 'mm', 'P', ''],
         ['BC2', '', 0, '0,0', '0,0', 'mm', 'P', ''],
+        ['BC3', '', 0, '0,0', '0,0', 'mm', 'P', ''],
+        ['BCI', '', 0, '0,0', '0,0', 'mm', 'P', ''],
+        ['BCE', '', 0, '0,0', '0,0', 'mm', 'P', ''],
+        ['BC4', '', 0, '0,0', '0,0', 'mm', 'P', ''],
         ['R01', '', 0, '0,0', '0,0', 'mm', 'C', ''],
         ['R02', '', 0, '0,0', '0,0', 'mm', 'C', ''],
         ['R03', '', 0, '0,0', '0,0', 'mm', 'C', ''],
